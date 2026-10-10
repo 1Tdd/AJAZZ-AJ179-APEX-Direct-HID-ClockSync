@@ -1,0 +1,5 @@
+@echo off
+setlocal
+pushd "%~dp0"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Start-Process powershell.exe -Verb RunAs -ArgumentList '-NoLogo -NoProfile -ExecutionPolicy Bypass -NoExit -File ""%~dp0Test.ps1""'"
+popd
